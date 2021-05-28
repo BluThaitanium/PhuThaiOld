@@ -8,7 +8,7 @@ let counter = 0;
 
 let xx = 0;
 let xxx = 0;
-let word = "console.log('Phu Bar'); ";
+let word = '  $git commit -m "Phu_Bar"   ';
 
 setInterval(function() {
     context.fillStyle = (counter % 2 === 0) ? 'lightgreen' : 'black';
@@ -23,7 +23,7 @@ setInterval(function() {
       context.font = "40px Arial";
      	context.fillText(word[xxx/10 - 1], 4*xxx - 40, 45);
 
-    } else if (counter%98 === 0){
+    } else if (counter%110 === 0){
       xx = 0;
       xxx = 0;
       counter = 0;
