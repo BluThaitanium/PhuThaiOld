@@ -11,7 +11,7 @@ let xxx = 0;
 let word = "console.log('Phu Bar'); ";
 
 setInterval(function() {
-    context.fillStyle = (counter % 2 === 0) ? 'lightgreen' : 'blue';
+    context.fillStyle = (counter % 2 === 0) ? 'lightgreen' : 'black';
     context.font = "bold 16px Arial";
     context.fillRect(4*xx, 1, 20, 50);
 	  counter++;
