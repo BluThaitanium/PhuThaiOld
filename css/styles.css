@@ -1,6 +1,11 @@
+@font-face {
+    font-family: "ArchivoBlack";
+    src: url("../fonts/ArchivoBlack-Regular.ttf");
+}
+
 * {
     color: darkblue;
-    font-family: "Arial Black", monospace;
+    font-family: "ArchivoBlack", 'Arial Bold', Gadget, sans-serif, monospace;
 }
 
 html {
@@ -36,7 +41,7 @@ body {
 }
 
 .experiences h1 {
-    font-family: "Arial Black";
+    font-family: "ArchivoBlack", 'Arial Bold', Gadget, sans-serif;
     font-size: 70px;
     background-clip: text;
     background-image: linear-gradient(45deg, rgb(136, 28, 28), rgb(79, 119, 192));
@@ -103,6 +108,7 @@ body {
 
 .Hardwareexperiences {
     background-color: goldenrod;
+    background-image: url("../images/greencircuit.jpeg");
     padding: 90px;
     margin: 20px;
 }
@@ -112,11 +118,12 @@ body {
     padding-left: 10%;
     text-align: center;
     color: white;
+    font-size: 50px;
 }
 
-.Hardwareexperiences p{
-    display: inline;
+.Hardwareexperiences p {
     color: white;
+    vertical-align: middle;
 }
 
 .HardPhoto {
@@ -151,7 +158,7 @@ body {
 #name h1 {
     font-size: 130px;
     margin-top: 0px;
-    font-family: "Arial Black";
+    font-family: "ArchivoBlack", 'Arial Bold', Gadget, sans-serif;
     background-clip: text;
     background-image: linear-gradient(45deg, #661f62, #ff3714);
     background-size: 100%;
@@ -163,10 +170,17 @@ body {
 }
 
 #profilePic {
-    border:3px solid white;
+    border: 3px solid white;
     display: block;
     border-radius: 5%;
     margin: -200px auto;
+}
+
+.blur {
+    backdrop-filter: blur(5px);
+    border: 1px solid white;
+    padding: 20px;
+    margin: 20px;
 }
 
 .about {
@@ -183,7 +197,7 @@ body {
 
 .about h2 {
     margin: 50px 100px 10px 100px;
-    font-family: "Arial Black";
+    font-family: 'Arial Bold', Gadget, sans-serif;
     color: white;
     font-size: 50px;
 }
@@ -193,7 +207,7 @@ body {
     font-family: "Helvetica";
     color: white;
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 25px;
 }
 
 .sections {
