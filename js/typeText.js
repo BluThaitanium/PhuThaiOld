@@ -1,8 +1,9 @@
 const canvas = document.getElementById('canvas');
 const context = canvas.getContext('2d');
 
-canvas.width = canvas.height * 
-    (canvas.clientWidth / canvas.clientHeight);
+canvas.width = canvas.clientWidth;
+
+canvas.height = canvas.clientHeight;
 
 let counter = 0;
 
@@ -12,16 +13,15 @@ let word = '  $git commit -m "Phu_Bar"   ';
 
 setInterval(function() {
     context.fillStyle = (counter % 2 === 0) ? 'lightgreen' : 'black';
-    context.font = "bold 16px Arial";
-    context.fillRect(4*xx, 1, 20, 50);
+    context.fillRect(2.5*xx, 1, 20, 50);
 	  counter++;
 
     if (counter%4 === 0) {
     	xx += 10;
       xxx += 10;
       context.fillStyle = 'lightgreen';
-      context.font = "40px Arial";
-     	context.fillText(word[xxx/10 - 1], 4*xxx - 40, 45);
+      context.font = "200% Arial";
+     	context.fillText(word[xxx/10 - 1], 2.5*xxx - 40, 45);
 
     } else if (counter%110 === 0){
       xx = 0;
